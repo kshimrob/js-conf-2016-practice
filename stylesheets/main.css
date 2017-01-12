@@ -1,0 +1,88 @@
+body {
+	font: 300 16px 'Source Sans Pro', sans-serif;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+/*** Header ***/
+
+header {
+	background: linear-gradient(rgba(53, 128, 194, 0.8), rgba(53, 128, 194, 0.8)), url(../assets/bg1080x2.jpg) center;
+	height: 460px;
+}
+
+header .container {
+	margin: 0 auto;
+	max-width: 960px;
+}
+
+header ul {
+	display: inline-block;
+}
+
+header li {
+	display: inline-block;
+	height: 80px;
+	box-sizing: border-box;
+}
+
+header a {
+	transition: background-color 0.2s ease-in;
+	display: inline-block;
+	color: white;
+	padding: 30px 15px;
+}
+
+header a:hover {
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
+ul.social-media {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.social-media a {
+	box-sizing: border-box;
+	text-indent: -9999px;
+	width: 80px;
+	position: relative;
+	height: 80px;
+}
+
+.social-media a::after {
+	content:'';
+	display: block;
+	position: absolute;
+	top: 25px;
+	left: 25px;
+	height: 30px;
+	width: 30px;
+	background: url(../assets/social.png) no-repeat;
+	background-size: 60px;
+
+}
+
+a.facebook::after {
+	background-position: -30px 0;
+}
+
+header h1 {
+	text-align: center;
+	font-size: 2.25rem;
+	color: white;
+	padding: 100px 0;
+	text-transform: uppercase;
+}
+
+.yellow-text {
+	color: #f3df49;
+}
+
