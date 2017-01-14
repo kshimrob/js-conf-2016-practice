@@ -4,14 +4,19 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width,intial-scale=1,minimum-scale=1">
 		<title> JSConf Budapest 2016, May 12 - 13 </title>
+		<link rel="icon" type="image/png" href="assets/logo.png">
 		<link rel="stylesheet" href="stylesheets/whitespace-reset.css">
 		<link rel="stylesheet" href="stylesheets/main.css">
-		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400i,700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300i,700" rel="stylesheet">
 	</head>
 	<body>
 		<header>
 			<nav>
 				<div class="container">
+						<label for="hamburger-menu">
+						<input type="checkbox" name="hamburger-menu" id="hamburger-menu">
+							<span class="hamburger">&#9776</span>
+						</label>
 					<ul class="page-nav">
 						<li><a href="#speakers">Speakers</a></li>
 						<li><a href="#workshops">Workshops</a></li>
@@ -25,64 +30,450 @@
 						<li><a href="https://www.facebook.com/bp.jsconf" class="facebook">On facebook as bp.jsconf</a></li>
 					</ul>
 				</div>
-				<h1><span class="yellow-text">Budapest</span> + May 12-13 =</h1>
-				<a href="https://jsconfbp.com"></a>
+				<h1><span class="yellow-text">Budapest</span><span class="math-symbol">+</span> May 12-13. <span class="math-symbol">=</span></h1>
 			</nav>
 		</header>
 		<main>
-			<h2><strong>JS Conf Budapest</strong> is a JSConf family member 2-day non-profit for-the-community by-the-community conference about JavaScript in Budapest, Hungary.</h2>
+			<div class="container">
+				<h2><strong>JS Conf Budapest</strong> is a JSConf family member 2-day non-profit for-the-community by-the-community conference about JavaScript in Budapest, Hungary.</h2>
+			</div>
 			<section id="speakers">
-				<h3> Speakers </h3>
-				<div class="speaker-profile">
-					<h4><a href="https://jsconfbp.com/speakers/laurie-voss.html">Laurie Voss</a><a href="https://www.twitter.com/seldo">@seldo</a></h4>
-					<p><a href="https://jsconfbp.com/speakers/laurie-voss.html">What everyone should know about npm</a></p>
+				<div class="container">
+					<h3 class="section-title"> Speakers </h3>
+					<div class="speaker-profile">
+						<div class="image">
+							<a href="https://jsconfbp.com/speakers/laurie-voss.html">
+								<img src="assets/speakers/speaker-seldo.jpg">
+							</a>
+						</div>
+						<h4>
+							<a href="https://jsconfbp.com/speakers/laurie-voss.html" class="name">Laurie Voss </a><a href="https://www.twitter.com/seldo" class="twitter-username">@seldo</a>
+						</h4>
+						<p>
+							<a href="https://jsconfbp.com/speakers/laurie-voss.html">What everyone should know about npm</a>
+						</p>
+					</div>
+					<div class="speaker-profile">
+						<div class="image">
+							<a href="https://jsconfbp.com/speakers/suz-hinton.html">
+								<img src="assets/speakers/speaker-noopkat.jpg">
+							</a>
+						</div>
+						<h4>
+							<a href="https://jsconfbp.com/speakers/suz-hinton.html" class="name">Suz Hinton </a><a href="https://www.twitter.com/noopkat" class="twitter-username">@noopkat</a>
+						</h4>
+						<p>
+							<a href="https://jsconfbp.com/speakers/suz-hinton.html">The Formulartic Spectrum</a>
+						</p>
+					</div>
+					<div class="speaker-profile">
+						<div class="image">
+							<a href="https://jsconfbp.com/speakers/denys-mishunov.html">
+								<img src="assets/speakers/speaker-mishunov.jpg">
+							</a>
+						</div>
+						<h4>
+							<a href="https://jsconfbp.com/speakers/denys-mishunov.html" class="name">Suz Hinton </a><a href="https://www.twitter.com/mishunov" class="twitter-username">@mishunov</a>
+						</h4>
+						<p>
+							<a href="https://jsconfbp.com/speakers/denys-mishunov.html">Why Performance Matters</a>
+						</p>
+					</div>
+					<div class="speaker-profile">
+						<div class="image">
+							<a href="https://jsconfbp.com/speakers/yan-zhu.html">
+								<img src="assets/speakers/speaker-bcrypt.jpg">
+							</a>
+						</div>
+						<h4>
+							<a href="https://jsconfbp.com/speakers/yan-zhu.html" class="name">Suz Hinton </a><a href="https://www.twitter.com/bcrypt" class="twitter-username">@bcrypt</a>
+						</h4>
+						<p>
+							<a href="https://jsconfbp.com/speakers/yan-zhu.html">Encrypt the Web For $0</a>
+						</p>
+					</div>
+					<div class="speaker-profile">
+						<div class="image">
+							<a href="https://jsconfbp.com/speakers/pietrusky-schuhfuss.html">
+								<img src="assets/speakers/speaker-timpietrusky-usefulthink.jpg">
+							</a>
+						</div>
+						<h4>
+							<a href="https://jsconfbp.com/speakers/pietrusky-schuhfuss.html" class="name">Tim Pietrusky / Martin Schuhfus</a> <a href="https://www.twitter.com/timpietrusky" class="twitter-username">@timpietrusky</a><a href="https://www.twitter.com/usefulthink" class="twitter-username">@usefulthink</a>
+						</h4>
+						<p>
+							<a href="https://jsconfbp.com/speakers/pietrusky-schuhfuss.html">We ❤ Music & the Web</a>
+						</p>
+					</div>
+					<div class="speaker-profile">
+						<div class="image">
+							<a href="https://jsconfbp.com/speakers/lena-reinhard.html">
+								<img src="assets/speakers/speaker-lrnrd.jpg">
+							</a>
+						</div>
+						<h4>
+							<a href="https://jsconfbp.com/speakers/lena-reinhard.html" class="name">Lena Reinhard</a><a href="https://www.twitter.com/lrnrd" class="twitter-username"> @lrnrd</a>
+						</h4>
+						<p>
+							<a href="https://jsconfbp.com/speakers/lena-reinhard.html">Encrypt the Web For $0</a>
+						</p>
+					</div>
+					<div class="speaker-profile">
+						<div class="image">
+							<a href="https://jsconfbp.com/speakers/sam-bellen.html">
+								<img src="assets/speakers/speaker-sambego.jpg">
+							</a>
+						</div>
+						<h4>
+							<a href="https://jsconfbp.com/speakers/sam-bellen.html" class="name">Sam Bellen</a><a href="https://www.twitter.com/sambego" class="twitter-username"> @sambego</a>
+						</h4>
+						<p>
+							<a href="https://jsconfbp.com/speakers/sam-bellen.html">Changing live audio with the web-audio-api</a>
+						</p>
+					</div>
+					<div class="speaker-profile">
+						<div class="image">
+							<a href="https://jsconfbp.com/speakers/stefan-baumgartner.html">
+								<img src="assets/speakers/speaker-ddprrt.jpg">
+							</a>
+						</div>
+						<h4>
+							<a href="https://jsconfbp.com/speakers/stefan-baumgartner.html" class="name">Stefan Baumgartner</a><a href="https://www.twitter.com/ddprrt" class="twitter-username"> @ddprrt</a>
+						</h4>
+						<p>
+							<a href="https://jsconfbp.com/speakers/stefan-baumgartner.html">HTTP/2 is coming! Unbundle all the things?!?</a>
+						</p>
+					</div>
+					<div class="speaker-profile">
+						<div class="image">
+							<a href="https://jsconfbp.com/speakers/rachel-white.html">
+								<img src="assets/speakers/speaker-ohhoe.jpg">
+							</a>
+						</div>
+						<h4>
+							<a href="https://jsconfbp.com/speakers/rachel-white.html" class="name">Rachel White</a><a href="https://www.twitter.com/ohhoe" class="twitter-username"> @ohhoe</a>
+						</h4>
+						<p>
+							<a href="https://jsconfbp.com/speakers/rachel-white.html">Internet of Cats</a>
+						</p>
+					</div>
+					<div class="speaker-profile">
+						<div class="image">
+							<a href="https://jsconfbp.com/speakers/anand-vemuri.html">
+								<img src="assets/speakers/speaker-brownhat57.jpg">
+							</a>
+						</div>
+						<h4>
+							<a href="https://jsconfbp.com/speakers/anand-vemuri.html" class="name">Anand Vemuri</a><a href="https://www.twitter.com/brownhat57" class="twitter-username"> @brownhat57</a>
+						</h4>
+						<p>
+							<a href="https://jsconfbp.com/speakers/anand-vemuri.html">Offensive and Defensive Strategies for Client-Side JavaScript Security</a>
+						</p>
+					</div>
+					<div class="speaker-profile">
+						<div class="image">
+							<a href="https://jsconfbp.com/speakers/claudia-hernandez.html">
+								<img src="assets/speakers/speaker-koste4.jpg">
+							</a>
+						</div>
+						<h4>
+							<a href="https://jsconfbp.com/speakers/claudia-hernandez.html" class="name">Claudia Hernández</a><a href="https://www.twitter.com/koste4" class="twitter-username"> @koste4</a>
+						</h4>
+						<p>
+							<a href="https://jsconfbp.com/speakers/claudia-hernandez.html">Down the Rabbit Hole: JS in Wonderland</a>
+						</p>
+					</div>
+					<div class="speaker-profile">
+						<div class="image">
+							<a href="https://jsconfbp.com/speakers/rob-kerr.html">
+								<img src="assets/speakers/speaker-robrkerr.jpg">
+							</a>
+						</div>
+						<h4>
+							<a href="https://jsconfbp.com/speakers/rob-kerr.html" class="name">Rob Kerr</a><a href="https://www.twitter.com/robrkerr" class="twitter-username"> @robrkerr</a>
+						</h4>
+						<p>
+							<a href="https://jsconfbp.com/speakers/rob-kerr.html">Science in the Browser: Orchestrating and Visualising Neural Simulations</a>
+						</p>
+					</div>
+					<div class="speaker-profile">
+						<div class="image">
+							<a href="https://jsconfbp.com/speakers/nicolas-bevacqua.html">
+								<img src="assets/speakers/speaker-nzgb.jpg">
+							</a>
+						</div>
+						<h4>
+							<a href="https://jsconfbp.com/speakers/nicolas-bevacqua.html" class="name">Nicolás Bevacqua</a><a href="https://www.twitter.com/nzgb" class="twitter-username"> @nzgb</a>
+						</h4>
+						<p>
+							<a href="https://jsconfbp.com/speakers/nicolas-bevacqua.html">High Performance in the Critical Rendering Path</a>
+						</p>
+					</div>
+					<div class="speaker-profile">
+						<div class="image">
+							<a href="https://jsconfbp.com/speakers/princiya-sequeira.html">
+								<img src="assets/speakers/speaker-princi_ya.jpg">
+							</a>
+						</div>
+						<h4>
+							<a href="https://jsconfbp.com/speakers/princiya-sequeira.html" class="name">Princiya Sequeira</a><a href="https://www.twitter.com/princi_ya" class="twitter-username"> @princi_ya</a>
+						</h4>
+						<p>
+							<a href="https://jsconfbp.com/speakers/princiya-sequeira.html">Natural User Interface using JavaScript</a>
+						</p>
+					</div>
+					<div class="speaker-profile">
+						<div class="image">
+							<a href="https://jsconfbp.com/speakers/maurice-de-beijer.html">
+								<img src="assets/speakers/speaker-mauricedb.jpg">
+							</a>
+						</div>
+						<h4>
+							<a href="https://jsconfbp.com/speakers/maurice-de-beijer.html" class="name">Maurice de Beijer</a><a href="https://www.twitter.com/mauricedb" class="twitter-username"> @mauricedb</a>
+						</h4>
+						<p>
+							<a href="https://jsconfbp.com/speakers/maurice-de-beijer.html">Event-Sourcing your React-Flux applications</a>
+						</p>
+					</div>
+					<div class="speaker-profile">
+						<div class="image">
+							<a href="https://jsconfbp.com/speakers/oliver-joseph-ash.html">
+								<img src="assets/speakers/speaker-OliverJAsh.jpg">
+							</a>
+						</div>
+						<h4>
+							<a href="https://jsconfbp.com/speakers/oliver-joseph-ash.html" class="name">Oliver Joseph Ash</a><a href="https://www.twitter.com/OliverJAsh" class="twitter-username"> @OliverJAsh</a>
+						</h4>
+						<p>
+							<a href="https://jsconfbp.com/speakers/oliver-joseph-ash.html">Building an Offline Page for theguardian.com</a>
+						</p>
+					</div>
+					<div class="speaker-profile">
+						<div class="image">
+							<a href="https://jsconfbp.com/speakers/safia-abdalla.html">
+								<img src="assets/speakers/speaker-captainsafia.jpg">
+							</a>
+						</div>
+						<h4>
+							<a href="https://jsconfbp.com/speakers/safia-abdalla.html" class="name">Safia Abdalla</a><a href="https://www.twitter.com/captainsafia" class="twitter-username"> @captainsafia</a>
+						</h4>
+						<p>
+							<a href="https://jsconfbp.com/speakers/safia-abdalla.html">The Hitchhiker's Guide to All Things Memory in Javascript</a>
+						</p>
+					</div>
+					<div class="speaker-profile">
+						<div class="image">
+							<a href="https://jsconfbp.com/speakers/nick-hehr.html">
+								<img src="assets/speakers/speaker-hipsterbrown.jpg">
+							</a>
+						</div>
+						<h4>
+							<a href="https://jsconfbp.com/speakers/nick-hehr.html" class="name">Safia Abdalla</a><a href="https://www.twitter.com/hipsterbrown" class="twitter-username"> @hipsterbrown</a>
+						</h4>
+						<p>
+							<a href="https://jsconfbp.com/speakers/nick-hehr.html">The Other Side of Empathy</a>
+						</p>
+					</div>
 				</div>
 			</section>
 			<section id="masters-of-ceremony">
+				<h3 class="section-title"> Masters of Ceremony </h3>
+					<div class="container">
+						<div class="speaker-profile ceremony-profile">
+							<div class="image">
+								<img src="assets/speakers/speaker-jaffathecake.jpg">
+							</div>
+							<h4>
+								Jake Archibald<a href="https://www.twitter.com/jaffathecake" class="twitter-username"> @jaffathecake</a>
+							</h4>
+							<p>
+								<a href="https://www.google.com">Google</a>
+							</p>
+						</div>
+					</div>
 			</section>
 			<section id="workshops">
-				<div class="workshop-info">
-					<img src="" alt="Nodebots by Markus Leutwyler">
-					<h3><a href="https://jsconfbp.com/workshops/nodebots.html">Nodebots</a></h3>
-					<h4> By <a href="https://jsconfbp.com/workshops/nodebots.html">Markus Leutwyler</a></h4>
-					<p>The workshop focuses on assembling and decorating your robot first, then programming it and at the end a Sumo-style battle!</p>
+				<h3 class="section-title"> Workshops </h3>
+				<div class="container">
+					<div class="workshop-info">
+						<div class="image">
+							<img src="assets/speakers/speaker-twtomcat.jpg" alt="Nodebots by Markus Leutwyler">
+						</div>
+						<h3>
+							<a href="https://jsconfbp.com/workshops/nodebots.html">Nodebots</a>
+						</h3>
+						<h4> By <a href="https://jsconfbp.com/workshops/nodebots.html">Markus Leutwyler</a></h4>
+						<p>The workshop focuses on assembling and decorating your robot first, then programming it and at the end a Sumo-style battle!</p>
+					</div>
+					<div class="workshop-info">
+						<div class="image">
+							<img src="assets/speakers/speaker-blacksonic86-andrewdrawain.jpg" alt="Journey towards Angular 2 by Soos and Finca">
+						</div>
+						<h3>
+							<a href="https://jsconfbp.com/workshops/angular2.html">Journey towards Angular 2</a>
+						</h3>
+						<h4> By <a href="https://jsconfbp.com/workshops/angular2.html">Gábor Soós</a> and <a href="https://jsconfbp.com/workshops/angular2.html">András Fincza</a></h4>
+						<p>Journey from an old-school AngularJS code to a modern and decent one which is only one step far from an Angular 2 application</p>
+					</div>
+					<div class="workshop-info">
+						<div class="image">
+							<img src="assets/speakers/speaker-hngrhorace.jpg" alt="Composing music with JavaScript by Andor Polgar">
+						</div>
+						<h3>
+							<a href="https://jsconfbp.com/workshops/composing-music.html">Composing music with JavaScript</a>
+						</h3>
+						<h4> By <a href="https://jsconfbp.com/workshops/composing-music.html">Andor Polgar</a></h4>
+						<p>Be a part of a musical experiment where we all send musical notes to a polyphonic modular synthesizer with the help of WebSockets and Web MIDI API.</p>
+					</div>
+					<div class="workshop-info">
+						<div class="image">
+							<img src="assets/speakers/speaker-haxe-ws.jpg" alt="Develop webapps with Haxe">
+						</div>
+						<h3>
+							<a href="https://jsconfbp.com/workshops/haxe-webapps.html">Develop webapps with Haxe</a>
+						</h3>
+						<h4> By <a href="https://jsconfbp.com/workshops/haxe-webapps.html">Balazs Zubak</a> and <a href="https://jsconfbp.com/workshops/haxe-webapps.html">Francis Bourre</a></h4>
+						<p>Frontend developers creating single-page, stateful applications has a lot of challenge to overcome. To do so we can learn from other technologies that already has some answers for these problems and try to implement it on our environment, the browser.</p>
+					</div>
+					<div class="workshop-info">
+						<div class="image">
+							<img src="assets/speakers/speaker-nodeschool.jpg" alt="Nodeschool">
+						</div>
+						<h3>
+							<a href="https://jsconfbp.com/workshops/nodeschool.html">Nodeschool</a>
+						</h3>
+						<h4></h4>
+						<p>Learn node.js with NodeSchool's choose-your-own-adventure style interactive workshop.</p>
+					</div>
+					<div class="workshop-info">
+						<div class="image">
+							<img src="assets/speakers/speaker-threejs-ws.jpg" alt="Three.js Viewer API">
+						</div>
+						<h3>
+							<a href="https://jsconfbp.com/workshops/threejs.html">Three.js Viewer API</a>
+						</h3>
+						<h4> By <a href="https://jsconfbp.com/workshops/threejs.html">Jaime Rosales</a> and <a href="https://jsconfbp.com/workshops/threejs.html">Adam Nagy</a></h4>
+						<p>No more flat web navigation, add 3D interaction as easy as 1, 2, Three.js</p>
+					</div>
+					<div class="workshop-info">
+						<div class="image">
+							<img src="assets/speakers/speaker-tessel2-ws.jpg" alt="Tessel 2">
+						</div>
+						<h3>
+							<a href="https://jsconfbp.com/workshops/tessel2.html">Tessel 2</a>
+						</h3>
+						<h4> By <a href="https://jsconfbp.com/workshops/tessel2.html">Nick Hehr</a> and <a href="https://jsconfbp.com/workshops/tessel2.html">István Szmozsánszky</a></h4>
+						<p>Hardware-hacking & prototyping in node.js with the Tessel 2</p>
+					</div>
+					<div class="workshop-info">
+						<div class="image">
+							<img src="assets/speakers/speaker-nolanlawson.jpg" alt="Crash course on Progressive Web Apps">
+						</div>
+						<h3>
+							<a href="https://jsconfbp.com/workshops/progressive-webapps.html">Crash course on Progressive Web Apps</a>
+						</h3>
+						<h4> By <a href="https://jsconfbp.com/workshops/progressive-webapps.html">Nolan Lawson</a></h4>
+						<p>How to create an fast, immersive mobile app, built entirely with web technologies</p>
+					</div>
 				</div>
 			</section>
 			<section id="sponsors">
-				<ul>
-					<li><a href="euedge.com" target="_blank"><img src="assets/sponsors/" alt="EU Edge Logo"></a></li>
-					<li class="minor-sponsor"><a href="https://developers.google.com/web/" target="_blank"><img src="assets/sponsors/" alt="Google Chrome Logo"></a></li>
-				</ul>
+				<h3 class="section-title"> Sponsors </h3>
+				<div class="container">
+					<ul>
+						<li><a href="euedge.com" target="_blank"><img src="assets/sponsors/euedge.png" alt="EU Edge Logo"></a></li>
+						<li><a href="mozilla.com" target="_blank"><img src="assets/sponsors/mozilla.png" alt="Mozilla Logo"></a></li>
+						<li><a href="zalando.com" target="_blank"><img src="assets/sponsors/zalando.png" alt="Zalando Logo"></a></li>
+						<li><a href="trace.risingstack.com" target="_blank"><img src="assets/sponsors/risingstack.png" alt="Rising Stack Logo" class="mid-sponsor"></a></li>
+						<li><a href="www.doclerholding.com" target="_blank"><img src="assets/sponsors/doclerholding.png" alt="Docler Holding Logo" class="mid-sponsor"></a></li>
+						<li><a href="www.epam.com" target="_blank"><img src="assets/sponsors/epam.png" alt="Epam Logo" class="mid-sponsor"></a></li>
+						<li><a href="www.techatbloomberg.com" target="_blank"><img src="assets/sponsors/bloomberg.png" alt="Bloomberg Logo" class="mid-sponsor"></a></li>
+						<li><a href="www.booking.com" target="_blank"><img src="assets/sponsors/bookingcom.png" alt="Booking Logo" class="mid-sponsor"></a></li>
+						<li><a href="www.jsfiddle.com" target="_blank"><img src="assets/sponsors/jsfiddle.png" alt="JSFiddle Logo" class="mid-sponsor"></a></li>
+						<li class="inline-block"><a href="https://developers.google.com/web/" target="_blank"><img src="assets/sponsors/google.png" alt="Google Chrome Logo" class="minor-sponsor"></a></li>
+						<li class="inline-block"><a href="https://www.npm.com" target="_blank"><img src="assets/sponsors/npm.png" alt="NPM Logo" class="minor-sponsor"></a></li>
+						<li class="inline-block"><a href="https://www.ibm.com" target="_blank"><img src="assets/sponsors/ibm.png" alt="IBM Logo" class="minor-sponsor"></a></li>
+						<li class="inline-block"><a href="https://http://www.ibm.com/watson/" target="_blank"><img src="assets/sponsors/ibmwatson.png" alt="IBM Watson Logo" class="minor-sponsor"></a></li>
+						<li class="inline-block"><a href="https://www.dynatrace.com/" target="_blank"><img src="assets/sponsors/dynatrace.png" alt="Dynatrace Logo" class="minor-sponsor"></a></li>
+						<li class="inline-block"><a href="https://www.ustream.tv/our-company/career/budapest" target="_blank"><img src="assets/sponsors/ustream.png" alt="Ustream Logo" class="minor-sponsor"></a></li>
+					</ul>
 				<h2> We're always looking for sponsors!</h2>
 				<p> Help us make this experience for the attendees even more awesome! </p>
 				<p> We're always open for sponsorship and cooperation, drop us a mail: </p>
 				<p><a href="mailto:team@jsconfbp.com">team@jsconfbp.com</a></p>
 				<h2> Sponsorship Packages </h2>
 				<p>Check out our <a href="https://jsconfbp.com/Sponsorship2016.pdf">Sponsorship Packages</a> for this year, in our brochure summarizing last years event</p>
+				</div>
 			</section>
 			<section id="news">
-				<article>
-					<h3><a href="https://jsconfbp.com/news/schedule.html">Full Schedule</a></h3>	
-					<h5> Web Apr 27 2016</h5>
-					<p> Our full schedule is here for May!</p>
-				</article>
-				<article>
-					<h3><a href="https://jsconfbp.com/news/schedule.html">Full Schedule</a></h3>	
-					<h5> Web Apr 27 2016</h5>
-					<p> Our full schedule is here for May!</p>
-				</article>
+				<h3 class="section-title"> News </h3>
+				<div class="container">
+					<article>
+						<h3><a href="https://jsconfbp.com/news/schedule.html">Full Schedule</a></h3>	
+						<h5>Web Apr 27 2016</h5>
+						<p>Our full schedule is here for May!</p>
+					</article>
+					<article>
+						<h3><a href="https://jsconfbp.com/news/diversity-jury.html">Update on the Diversity Jury process</a></h3>	
+						<h5>Tue Apr 12 2016</h5>
+						<p> This year, we've teamed up with Green Fox Academy to evaluate Diversity Sponsorship applications</p>
+					</article>
+					<article>
+						<h3><a href="https://jsconfbp.com/news/party-access.html">Party Access</a></h3>	
+						<h5>Wed Apr 06 2016</h5>
+						<p>Join us to celebrate JavaScript with a great show made with JS, and a party afterwards!</p>
+					</article>
+					<article>
+						<h3><a href="https://jsconfbp.com/news/early-schedule.html">Early Schedule</a></h3>	
+						<h5>Thu Mar 24 2016</h5>
+						<p>Here is how these few days in May will look like.</p>
+					</article>
+					<article>
+						<h3><a href="https://jsconfbp.com/news/free-workshops.html">Free Workshops available for every attendee</a></h3>	
+						<h5>Sun Jan 10 2016</h5>
+						<p>May 10 will be a day full of workshops, which are available free for every ticket holder</p>
+					</article>
+					<article>
+						<h3><a href="https://jsconfbp.com/news/tickets.html">Regular Tickets sale starts 1st January 2016</a></h3>	
+						<h5>Thu Dec 31 2015</h5>
+						<p>Regular Tickets are on sale from 1st January. Ticket price is 200 EUR + VAT + Fees = 269 EUR</p>
+					</article>
+					<article>
+						<h3><a href="https://jsconfbp.com/news/ambassador-program.html">Starting our Ambassador Program</a></h3>	
+						<h5>Tue Dec 15 2015</h5>
+						<p>We aim to help developer communities out there, by our Ambassador Program, providing discounts for meetups and usergroups</p>
+					</article>
+					<article>
+						<h3><a href="https://jsconfbp.com/news/early-bird-tickets.html">Early Bird Tickets are available from 6th December, 10:00 AM CET</a></h3>	
+						<h5>Sun Nov 29 2015</h5>
+						<p>Early Bird Tickets are on sale from 6th December, 10:00 AM CET. Ticket price will be 100 EUR + VAT + Fees = 133 EUR</p>
+					</article>
+					<article>
+						<h3><a href="https://jsconfbp.com/news/here-we-go-again.html">Here we go again!</a></h3>	
+						<h5>Thu Oct 01 2015</h5>
+						<p>JSConf Budapest is coming in May 12-13, 2016!</p>
+					</article>
+				</div>
 			</section>
 			<section id="venue">
-				<img src="">
-				<h3> Akvárium Klub, Budapest </h3>
-				<p> Located right in the center of the city, below an actual pool, filled with water! </p>
-				<blockquote> Akvárium Klub is more than a simple bar: it is a culture center with a wide musical repertoire from mainstream to underground. There is always a good concert and a smashing exhibition, performance, or other event happening here, in a friendly scene, situated right in the city center. <a href="http://welovebudapest.com/clubs.and.nightlife.1/clubs.2/akvarium.klub" target="_blank">welovebudapest.com</a></blockquote>
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2695.598026279397!2d19.05160981562676!3d47.49774367917764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741dc4036aa3cf5%3A0x3c5310b2d567bf7d!2sBudapest%2C+Erzs%C3%A9bet+t%C3%A9r+12%2C+1051+Hungary!5e0!3m2!1sen!2sus!4v1484076113583" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+				<h3 class="section-title"> Venue </h3>
+				<div class="image-container">
+					<img src="assets/akvarium-in.jpg" alt="Akvarium Klub">
+				</div>
+				<div class="container">
+					<h3> Akvárium Klub, Budapest </h3>
+					<p> Located right in the center of the city, below an actual pool, filled with water! </p>
+					<blockquote> Akvárium Klub is more than a simple bar: it is a culture center with a wide musical repertoire from mainstream to underground. There is always a good concert and a smashing exhibition, performance, or other event happening here, in a friendly scene, situated right in the city center. <a href="http://welovebudapest.com/clubs.and.nightlife.1/clubs.2/akvarium.klub" target="_blank">welovebudapest.com</a></blockquote>
+				</div>
+				<div class="map-responsive">
+					<div class="overlay" onClick="style.pointerEvents='none'"></div>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2695.598026279397!2d19.05160981562676!3d47.49774367917764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741dc4036aa3cf5%3A0x3c5310b2d567bf7d!2sBudapest%2C+Erzs%C3%A9bet+t%C3%A9r+12%2C+1051+Hungary!5e0!3m2!1sen!2sus!4v1484076113583" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div>
 			</section>
 		</main>
 		<footer>
 			<p>JSConf Budapest welcomes everybody, please be nice to each other.</p>
-			<p><a href="https://jsconfbp.com/code-of-conduct.html"> Code of Conduct</a> | <a href="https://jsconfbp.com/sponsors.html"> Sponsoration </a>
+			<p><a href="https://jsconfbp.com/code-of-conduct.html"> Code of Conduct</a> | <a href="https://jsconfbp.com/sponsors.html"> Sponsoration </a> | <a href="https://jsconfbp.com/about.html"> About </a> | <a href="https://www.twitter.com/jsconfbp">@jsconfbp</a></p>
 		</footer>
 	</body>
 </html>

@@ -10,6 +10,10 @@ a {
 	text-decoration: none;
 }
 
+section {
+	padding-bottom: 100px;
+}
+
 /*** Header ***/
 
 header {
@@ -24,6 +28,21 @@ header .container {
 
 header ul {
 	display: inline-block;
+}
+
+#hamburger-menu, .hamburger {
+	display: none;
+}
+
+header ul.page-nav::before {
+	content: "";
+	display: inline-block;
+	background-image: url(../assets/logo.png);
+	background-size: 100% 100%;
+	height: 45px;
+	width: 45px;
+	vertical-align: top;
+	margin: 15px 15px 0 0;
 }
 
 header li {
@@ -82,7 +101,391 @@ header h1 {
 	text-transform: uppercase;
 }
 
+header h1::after {
+	content: "";
+	display: inline-block;
+	background-image: url(../assets/logo.png);
+	background-size: 100% 100%;
+	height: 130px;
+	width: 130px;
+	vertical-align: middle;
+	margin-left: 25px;
+}
+
 .yellow-text {
 	color: #f3df49;
 }
 
+.math-symbol {
+	font-size: 3.5rem;
+	font-weight: 300;
+	padding: 0 20px;
+	position: relative;
+	top: 6px;
+}
+
+@media (max-width: 1028px) {
+	.page-nav {
+		font-size: 0.8rem;
+	}
+}
+
+@media (max-width: 870px) {
+	.hamburger {
+		display: inline-block;
+		font-size: 2.5rem;
+		color: white;
+		padding-top: 10px;
+	}
+
+	input[type="checkbox"] {
+		opacity: 0;
+		position: absolute;
+	}
+
+	.page-nav {
+		display: none;
+
+	}
+}
+/*** Main ***/
+
+h2 {
+	font-size: 1.875rem;
+	font-weight: 300;
+	margin: 0 auto;
+	text-align: center;
+	max-width: 600px;
+	padding: 90px 0;
+}
+
+.container {
+	padding: 0 20px;
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+.container::after {
+	content: "";
+	clear: both;
+	display: block;
+}
+
+.section-title {
+	text-transform: uppercase;
+	color: #3580C2;
+	font-size: 1.875rem;
+	text-align: center;
+	padding-bottom: 30px;
+}
+
+h3.section-title::before{
+	content:"";
+	display: inline-block;
+	border: 42px solid transparent;
+	border-left-color: rgba(0,123,255,0.2);	
+	border-bottom-color: rgba(0,123,255,0.1);
+	vertical-align: middle;
+	margin-right: -10px;
+}
+
+h3.section-title::after{
+	content:"";
+	display: inline-block;
+	border: 42px solid transparent;
+	border-right-color: rgba(0,123,255,0.1);	
+	border-top-color: rgba(0,123,255,0.05);
+	vertical-align: middle;
+	margin-left: -10px;
+}
+
+#speakers::after {
+	content:"";
+	clear: both;
+	display: block;
+}
+.speaker-profile {
+	width: 50%;
+	float: left;
+	box-sizing: border-box;
+	padding-right: 10px;
+	margin-bottom: 75px;
+}
+
+.image {
+	/*display: inline-block;*/
+	float: left;
+	position: relative;
+	margin: 0 16px 0 0;
+}
+
+.image img{
+	width: 120px;
+	height: 120px;
+	vertical-align: middle;
+}
+
+.image::before{
+	content: "";
+	position: absolute;
+	border-style: solid;
+	border-width: 0 15px 15px 0;
+	border-color: transparent;
+	border-right-color: white;
+	top: 0;
+	right: 0;
+}
+
+.image::after{
+	content: "";
+	position: absolute;
+	border-style: solid;
+	border-width: 15px 0 0 15px;
+	border-color: transparent transparent transparent white;
+	bottom: 0;
+	left: 0;
+}
+
+.speaker-profile h4 {
+	font-size: 1.375rem;
+	text-transform: uppercase;
+	font-weight: 400;
+	color: #3580C2;
+}
+
+.speaker-profile h4 a.name{
+	color: #3580C2;
+}
+.speaker-profile h4 a.twitter-username{
+	text-transform: lowercase;
+	color: #969696;
+	font-weight: 300;
+}
+
+.speaker-profile p {
+	padding-bottom: 0;
+}
+
+.speaker-profile p a{
+	color: #DB3127;
+	font-size: 1.315rem;
+	font-weight: 400;
+}
+
+.speaker-profile h4 a.name:hover, 
+.speaker-profile p a:hover {
+	text-decoration: underline;
+}
+
+/** Masters of Ceremony**/
+
+.ceremony-profile {
+	margin: 0 auto;
+	float: none;
+}
+
+/*** Workshops ***/
+
+.workshop-info {
+	margin-bottom: 60px;
+}
+.workshop-info img {
+	margin-bottom: 80px;
+}
+.workshop-info h3 {
+	font-size: 1.75rem;
+}
+
+.workshop-info h3 a{
+	color: #3580C2;
+}
+
+.workshop-info h4 {
+	font-size: 1.5rem;
+	padding-bottom: 30px;
+}
+.workshop-info h4 a{
+	color: #3580C2;
+}
+
+.workshop-info a:hover {
+	text-decoration: underline;
+}
+
+.workshop-info p {
+	font-size: 1.5rem;
+}
+
+/*** Sponsors ***/
+#sponsors ul {
+	width: 100%;
+	text-align: center;
+	padding-bottom: 35px;
+}
+#sponsors img {
+	width: 550px;
+}
+
+#sponsors img.mid-sponsor {
+	width: 460px;
+}
+
+#sponsors img.minor-sponsor {
+	width: 280px;
+}
+
+.inline-block {
+	display: inline-block;
+}
+
+#sponsors h2, p {
+	padding-bottom: 35px;
+	text-align: left;
+}
+
+#sponsors h2 {
+	font-weight: 600;
+	margin: 0;
+	padding-top: 0;
+}
+
+#sponsors p {
+	font-size: 1.5rem;
+}
+
+#sponsors p a {
+	color: #3580C2;
+	font-weight: 400;
+}
+
+#sponsors p a:hover {
+	text-decoration: underline;
+}
+
+/*** News ***/
+article {
+	padding-bottom: 75px;
+}
+article h3 a{
+	font-size: 1.75rem;
+	color: #3580C2;
+	font-weight: 400;
+}
+
+article h5 {
+	font-size: 1rem;
+	color: gray;
+	font-weight: 300;
+	padding: 15px 0 30px 0;
+}
+
+article p {
+	font-size: 1.75rem;
+	padding: 0;
+}
+
+/*** Venue ***/
+
+#venue {
+	padding-bottom: 40px;
+}
+#venue .image-container {
+	width: 100%;
+	height: 320px;
+	overflow: hidden;
+	margin-bottom: 70px;
+}
+
+#venue img {
+	width: 100%;
+	height: auto;
+	position: relative;
+	top: -200px;
+}
+#venue h3 {
+	font-size: 1.875rem;
+	color: #3580C2;
+}
+
+#venue blockquote {
+	margin-bottom: 40px;
+	font-size: 1.5rem;
+	font-style: italic;
+	padding-left: 40px;
+	border-left: 4px solid #3580C2;
+}
+
+#venue blockquote a {
+	font-size: 0.875rem;
+	text-align: right;
+	display: block;
+	color: #3580C2;
+	padding: 10px 0;
+}
+
+#venue blockquote a:hover {
+	text-decoration: underline;
+}
+
+#venue p {
+	font-size: 1.5rem;
+}
+
+.map-responsive {
+	overflow: hidden;
+	padding-bottom: 330px;
+	position: relative;
+	height: 0;
+	margin-bottom: 50px;
+}
+
+.map-responsive iframe {
+	left: 0;
+	top: 0;
+	height: 320px;
+	width: 100%;
+	position: absolute;
+	border: 0;
+}
+
+
+.overlay {
+   background: transparent; 
+   position: relative; 
+   width: 100%;
+   height: 320px;
+   top: 320px;
+   margin-top:-320px;
+   z-index: 2;
+}
+
+/*** Footer ***/
+
+footer {
+	text-align: center;
+	font-size: 0.75rem;
+	position: relative;
+	padding-bottom: 30px;
+}
+
+footer::before {
+	content: "";
+	position: absolute;
+	display: inline-block;
+	border-width: 20px;
+	border-style: solid;
+	border-color: #3580C2 transparent transparent transparent;
+	opacity: 0.05;
+	top: -25px;
+	left: 49%;
+}
+
+footer p {
+	margin: 0 auto;
+	text-align: center;
+	padding-bottom: 5px;
+}
+
+footer a {
+	color: #3580C2;
+}
