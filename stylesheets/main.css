@@ -138,14 +138,72 @@ header h1::after {
 		padding-top: 10px;
 	}
 
+	.close {
+		display: none;
+	}
+
 	input[type="checkbox"] {
 		opacity: 0;
 		position: absolute;
 	}
 
-	.page-nav {
-		display: none;
+	input[type="checkbox"]:checked ~ .page-nav {
+		left: 0;
+	}
 
+	input[type="checkbox"]:checked ~ label[for="hamburger-menu"] {
+		margin-left: 150px;
+	}
+
+	.hamburger:hover {
+		cursor: pointer;
+	}
+
+	.page-nav {
+		position: absolute;
+		top: 0;
+		left: -250px;
+		background-color: rgba(0,0,0,0.75);
+	}
+
+	.page-nav li {
+		display: block;
+		width: 150px;
+	}
+
+	.page-nav a:hover {
+		width: 150px;
+		box-sizing: border-box;
+	}
+
+	header ul.page-nav::before {
+		display: none;
+	}
+
+	.math-symbol {
+		display: none;
+	}
+
+	.white-text, .yellow-text {
+		display: block;
+	}
+
+	header h1 {
+		padding-top: 50px;
+	}
+
+	header h1::before {
+	content: "";
+	display: block;
+	background-image: url(../assets/logo.png);
+	background-size: 100% 100%;
+	height: 130px;
+	width: 130px;
+	margin: 0 auto 30px auto;
+	}
+
+	header h1::after {
+		display: none;
 	}
 }
 /*** Main ***/
@@ -230,8 +288,7 @@ h3.section-title::after{
 	position: absolute;
 	border-style: solid;
 	border-width: 0 15px 15px 0;
-	border-color: transparent;
-	border-right-color: white;
+	border-color: transparent white transparent transparent;
 	top: 0;
 	right: 0;
 }
@@ -277,6 +334,60 @@ h3.section-title::after{
 	text-decoration: underline;
 }
 
+@media (max-width: 760px) {
+	h2 {
+		font-size: 1.25rem;
+	}
+
+	h3.section-title {
+		position: relative;
+		height: 85px;
+		line-height: 85px;
+	}
+	h3.section-title::before{
+	content:"";
+	display: inline-block;
+	border: 42px solid transparent;
+	border-left-color: rgba(0,123,255,0.2);	
+	border-bottom-color: rgba(0,123,255,0.1);
+	vertical-align: top;
+	position: absolute;
+	left: 0;
+}
+
+h3.section-title::after{
+	content:"";
+	display: inline-block;
+	border: 42px solid transparent;
+	border-right-color: rgba(0,123,255,0.1);	
+	border-top-color: rgba(0,123,255,0.05);
+	vertical-align: top;
+	position: absolute;
+	right: 0;
+	}
+
+	div.speaker-profile {
+		display: block;
+		float: none;
+		margin-bottom: 40px;
+		width: 90%;
+	}
+
+	div.speaker-profile::after {
+		content:"";
+		clear: both;
+		display: block;
+	}
+
+	.speaker-profile .name {
+		font-size: 1.25rem;
+	}
+
+	.speaker-profile p a{
+		font-size: 1rem;
+	}
+}
+
 /** Masters of Ceremony**/
 
 .ceremony-profile {
@@ -288,16 +399,22 @@ h3.section-title::after{
 
 .workshop-info {
 	margin-bottom: 60px;
+	padding-left: 135px;
+	position: relative;
 }
-.workshop-info img {
-	margin-bottom: 80px;
+.workshop-info .image {
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 .workshop-info h3 {
 	font-size: 1.75rem;
+	vertical-align: top;
 }
 
 .workshop-info h3 a{
 	color: #3580C2;
+	vertical-align: top;
 }
 
 .workshop-info h4 {
@@ -306,6 +423,7 @@ h3.section-title::after{
 }
 .workshop-info h4 a{
 	color: #3580C2;
+	vertical-align: top;
 }
 
 .workshop-info a:hover {
@@ -314,6 +432,23 @@ h3.section-title::after{
 
 .workshop-info p {
 	font-size: 1.5rem;
+	vertical-align: top;
+}
+
+@media (max-width: 1028px) {
+	.workshop-info h3 a {
+	font-size: 1.375rem;
+	font-weight: 400;
+	}
+
+	.workshop-info h4 {
+	font-size: 1.25rem;
+	font-weight: 400;
+	}
+
+	.workshop-info p {
+	font-size: 1.25rem;
+	}
 }
 
 /*** Sponsors ***/
@@ -362,6 +497,25 @@ h3.section-title::after{
 	text-decoration: underline;
 }
 
+@media (max-width: 760px) {
+	#sponsors img {
+		width: 360px;
+	}
+
+	#sponsors img.mid-sponsor {
+		width: 310px;
+	}
+
+	#sponsors img.minor-sponsor {
+		width: 140px;
+		margin: 10px 15px;
+	}
+
+	#sponsors p {
+		font-size: 1.25rem;
+	}
+}
+
 /*** News ***/
 article {
 	padding-bottom: 75px;
@@ -384,24 +538,32 @@ article p {
 	padding: 0;
 }
 
+@media (max-width: 760px) {
+	article h3 a{
+		font-size: 1.375rem;
+	}
+	article h5 {
+		font-size: 0.875rem;
+	}
+	article p {
+		font-size: 1.2rem;
+	}
+}
+
 /*** Venue ***/
 
 #venue {
 	padding-bottom: 40px;
 }
+
 #venue .image-container {
-	width: 100%;
 	height: 320px;
-	overflow: hidden;
+	background-image: url(../assets/akvarium-in.jpg);
+	background-size: cover;
 	margin-bottom: 70px;
+	background-position: 50% 50%;
 }
 
-#venue img {
-	width: 100%;
-	height: auto;
-	position: relative;
-	top: -200px;
-}
 #venue h3 {
 	font-size: 1.875rem;
 	color: #3580C2;
@@ -459,6 +621,16 @@ article p {
    z-index: 2;
 }
 
+@media (max-width: 760px) {
+	#venue p {
+		font-size: 1.2rem;
+	}
+
+	#venue blockquote {
+		font-size: 1.2rem;
+	}
+}
+
 /*** Footer ***/
 
 footer {
@@ -470,14 +642,13 @@ footer {
 
 footer::before {
 	content: "";
-	position: absolute;
+	position: relative;
 	display: inline-block;
 	border-width: 20px;
 	border-style: solid;
 	border-color: #3580C2 transparent transparent transparent;
 	opacity: 0.05;
-	top: -25px;
-	left: 49%;
+	top: 15px;
 }
 
 footer p {
